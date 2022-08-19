@@ -2,12 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import tidal from "../../Assets/Projects/tidal.jpg";
+import bot from "../../Assets/Projects/bot.jpg";
+import miui from "../../Assets/Projects/miui.jpg";
+import heroku from "../../Assets/Projects/heroku.jpg";
 
 function Projects() {
   return (
@@ -23,7 +21,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={tidal}
               isBlog={false}
               title="Tidal-DL"
               description="A bot to download songs from Tidal website at Master-FLAC quality with many features using Tidal API."
@@ -34,7 +32,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={heroku}
               isBlog={false}
               title="Heroku Manager"
               description="A bot to manage Heroku Servers from Telegram itself. Usefull for those who have multiple apps running on different accounts"
@@ -44,7 +42,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={miui}
               isBlog={false}
               title="MiUi Icons"
               description="A bot for MIUI users to convert the Icon Pack APK files to the system MTZ theme file."
@@ -55,7 +53,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={bot}
               isBlog={false}
               title="Useless Media Bot"
               description="First made for my personal needs later made for the public. This bot helps you in groups where you want to deal with media files etc. especially for Mirror/Leech groups."
